@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>hi</pattern>
+        <template>Welcome! My name is Max, and I am a career guidance chatbot! Let's start with your strenghts to help decide a Computer Science Career path for you. Type "start" to begin.</template>
+    </category>
+    
+    <category>
+        <pattern>start</pattern>
+        <template>
+            Let's begin! Which of the following words best describes you?
+            <button>
+                <text>Leader</text>
+                <postback>leadership</postback>
+            </button>
+            <button>
+                <text>Detail-oriented</text>
+                <postback>detail</postback>
+            </button>
+            <button>
+                <text>Artistic</text>
+                <postback>artistic</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>leadership</pattern>
+        <template>Project Manager is a great career choice for people who are strong leaders. 
+        If you like to work with people and lead projects from start to finish then 
+        you should consider a career in project management!</template>
+    </category>
+    
+    <category>
+        <pattern>detail</pattern>
+        <template>
+            Which sounds more appealing to you?
+            <button>
+                <text>Identify and manage risks for a company's networks and preventing security breaches.</text>
+                <postback>security</postback>
+            </button>
+            <button>
+                <text>Create and test software that successfully mimicks human intelligence</text>
+                <postback>ai</postback>
+            </button>
+        </template>
+    </category>
+    
+    
+    <category>
+        <pattern>security</pattern>
+        <template>IT Security Analyst is a great career choice for detail-oriented professionals. As a security analyst you will monitor and manage risks on a network,
+        implement firewalls and other protections, and help people steer clear of malicious websites and other attacks.</template>
+    </category>
+    
+    <category>
+        <pattern>ai</pattern>
+        <template>AI Engineer is a great career choice for individuals who are interested and excited about the current leaps in technology. As an AI engineer you will create 
+        and train software with the intention of having software mimick human intelligence.</template>
+    </category>
+    
+    <category>
+        <pattern>artistic</pattern>
+        <template>
+            Which sounds more appealing to you?
+            <button>
+                <text>Create responsive, eye-catching designs for computer software user interfaces</text>
+                <postback>ux</postback>
+            </button>
+            <button>
+                <text>Tell compelling stories through use of computer graphics</text>
+                <postback>games</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>ux</pattern>
+        <template>UX Designer is a great career choice for technically minded people who have an eye for design! As a UX designer you will create user facing designs
+        for different types of software.</template>
+    </category>
+    
+    <category>
+        <pattern>games</pattern>
+        <template>Video Game Developer is a great career choice for artisitc individuals who love telling stories. As a video game developer, you will design and create video games
+        utilizing skills in computer graphics.</template>
+    </category>
+    
+    
+    
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that. Please type "hi" to find a great career fit!</template>
+  </category>
+</aiml>
